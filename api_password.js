@@ -1,8 +1,11 @@
 ApiPassword = {
-  validateUserPassword: function (username, password) {
+  isPasswordValid: function (username, password) {
+
+    if (!username || !password) {
+      throw new Meteor.Error('Username and password have to be provided');
+    }
 
     var user = Meteor.users.findOne({username: username});
-
     if (!user) {
       throw new Error('User ' + username + ' not found');
     }
@@ -14,10 +17,10 @@ ApiPassword = {
     var verifier = user.services.password.srp;
     var newVerifier = SRP.generateVerifier(password, {identity: verifier.identity, salt: verifier.salt});
 
-    if (verifier.verifier !== newVerifier.verifier) {
-      throw new Error('Password is incorrect');
+    if (verifier.verifier === newVerifier.verifier) {
+      return true;
     }
 
-    return 0;
+    return false;
   }
 };

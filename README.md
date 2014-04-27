@@ -1,4 +1,4 @@
-# ApiPassword for Meteor 0.7.2 and up
+# Server side user/password authentication for Meteor
 
 ## Installation
 `mrt add api-password`
@@ -20,4 +20,7 @@
 ```
 
 ## Licence
-MIT
+
+The MIT License (MIT)
+
+Copyright © 2014, Andrei Karpushonak aka @miktam, http://avrora.io

@@ -1,6 +1,6 @@
 {
   "name": "api-password",
-  "description": "Validate user and password on server side with Meteor 0.7.2 and up",
+  "description": "Validate user and password on server side",
   "homepage": "https://github.com/avrora/api-password",
   "author": "Andrei Karpushonak <andrei@avrora.io>",
   "version": "0.1.0",

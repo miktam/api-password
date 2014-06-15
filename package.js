@@ -1,5 +1,5 @@
 Package.describe({
-  summary: 'Server-side password validation useful for REST API with Meteor 0.7.2'
+  summary: 'Server-side username/password validation'
 });
 
 Package.on_use(function (api, where) {

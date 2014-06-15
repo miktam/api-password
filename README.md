@@ -1,4 +1,4 @@
-# Server side user/password authentication for Meteor
+# Server side user/password validation for Meteor
 
 ## Installation
 `mrt add api-password`

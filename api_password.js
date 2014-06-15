@@ -1,5 +1,9 @@
+/*global ApiPassword, SRP, Meteor, beforeEach, after, afterEach */
+/*jshint -W020 */
+
 ApiPassword = {
   isPasswordValid: function (username, password) {
+    "use strict";
 
     if (!username || !password) {
       throw new Meteor.Error('Username and password have to be provided');

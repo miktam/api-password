@@ -1,8 +1,8 @@
 {
   "name": "api-password",
-  "description": "Validate user and password on server side",
+  "description": "Server side user/password validation",
   "homepage": "https://github.com/avrora/api-password",
   "author": "Andrei Karpushonak <andrei@avrora.io>",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "git": "https://github.com/avrora/api-password.git"
 }

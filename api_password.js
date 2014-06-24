@@ -14,17 +14,29 @@ ApiPassword = {
       throw new Error('User ' + username + ' not found');
     }
 
-    if (!user.services || !user.services.password || !user.services.password.srp) {
+    if (!user.services || !user.services.password) {
       throw new Error('User has no password set');
     }
 
-    var verifier = user.services.password.srp;
-    var newVerifier = SRP.generateVerifier(password, {identity: verifier.identity, salt: verifier.salt});
+    if (!user.services.password.srp) {
 
-    if (verifier.verifier === newVerifier.verifier) {
-      return true;
+      // Meteor 0.8.2+
+      var resultOfInvocation = Accounts._checkPassword(user, password);
+      if (resultOfInvocation.error) {
+        return false;
+      } else {
+        return true;
+      }
+
+    } else {
+
+      // pre Meteor 0.8.2
+      var verifier = user.services.password.srp;
+      var newVerifier = SRP.generateVerifier(password, {identity: verifier.identity, salt: verifier.salt});
+      if (verifier.verifier === newVerifier.verifier) {
+        return true;
+      }
     }
-
     return false;
   }
 };

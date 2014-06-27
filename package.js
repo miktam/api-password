@@ -4,7 +4,7 @@ Package.describe({
 
 Package.on_use(function (api, where) {
   api.use('srp', 'server');
-  api.add_files(['api_password.js'], 'server')
+  api.add_files(['main.js'], 'server')
   api.export('ApiPassword', 'server');
 });
 

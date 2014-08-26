@@ -3,6 +3,6 @@
   "description": "Server side user/password validation",
   "homepage": "https://github.com/avrora/api-password",
   "author": "Andrei Karpushonak <andrei@avrora.io>",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "git": "https://github.com/avrora/api-password.git"
 }

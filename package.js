@@ -1,5 +1,6 @@
 Package.describe({
-  summary: 'Server-side username/password validation'
+  summary: 'Server-side username/password validation',
+  version: '0.3.0'
 });
 
 Package.on_use(function (api, where) {

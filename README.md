@@ -3,7 +3,7 @@
 In Meteor 0.8.2+ it uses bcrypt, in Meteor 0.8.1 and older - SRP.
 
 ## Installation
-`mrt add api-password`
+`meteor add miktam:api-password`
 
 ## Usage
 

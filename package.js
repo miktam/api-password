@@ -1,6 +1,6 @@
 Package.describe({
-  summary: 'Server-side username/password validation',
-  version: '0.3.0',
+  summary: 'Server-side username/email/password validation',
+  version: '0.4.0',
   name: 'miktam:api-password',
   git: 'https://github.com/avrora/api-password'
 });

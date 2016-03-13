@@ -29,4 +29,4 @@ Module allows server side authentication in Meteor, based on username/email and 
 
 The MIT License (MIT)
 
-Copyright © 2014, Andrei Karpushonak aka @miktam, http://avrora.io
+Copyright © 2014, Andrei Karpushonak aka @miktam

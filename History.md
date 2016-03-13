@@ -1,3 +1,7 @@
+v1.0.0 / 2016-03-13
+===================
+  * updated the docs
+
 v0.4.0 / 2014-10-16
 ==================
   * added ApiPassword.validate method accepting object with username or email
